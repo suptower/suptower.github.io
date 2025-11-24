@@ -1,7 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>suptower.github.io</title>
+  <style>
+    :root {
+      --bg: #0f0f11;
+      --card: #1a1a1d;
+      --text: #e9e9ea;
+      --accent: #7f5cff;
+      --accent-hover: #9b7bff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      padding: 6rem 1rem 4rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    p.subtitle {
+      font-size: 1.3rem;
+      opacity: 0.8;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 50px rgba(0,0,0,0.45);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      color: var(--accent-hover);
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>suptower</h1>
+    <p class="subtitle">/devpage</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Über mich</h2>
+      <p>23 year old student at Friedrich-Alexander University Erlangen-Nürnberg</p>
+    </section>
+
+    <section class="card">
+      <h2>Projekte</h2>
+      <ul>
+        <li><a href="https://github.com/suptower">GitHub</a></li>
+        <li><a href="https://suptower.github.io/beybladex-elo-system/index.html">BeybladeX Elo System</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Kontakt</h2>
+      <p>Discord: @suptower</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 suptower
+  </footer>
 </body>
 </html>
