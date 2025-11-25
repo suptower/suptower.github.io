@@ -1,117 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>suptower — Portfolio</title>
-  <link href="styles.css" rel="stylesheet" />
-  <meta name="description" content="suptower — Developer, AI tinkerer, projects." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub.io Game Menu</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container" id="app">
-    <nav>
-      <div class="brand">
-        <div class="logo">s</div>
-        <h3>suptower</h3>
-      </div>
-      <div class="nav-links">
-        <button class="btn" id="toggleTheme">Light</button>
-        <a class="btn" href="https://github.com/suptower" target="_blank">GitHub</a>
-      </div>
-    </nav>
+    <div class="center-wrapper">
+        <img src="assets/img/logo_suptower.jpg" alt="Logo" class="logo" />
 
-    <section class="hero">
-      <div class="hero-card">
-        <div class="eyebrow">Portfolio · C · JavaScript · Python · AI · Open Source</div>
-        <h1>Hi, ich bin suptower — <span class="gradient-text">building things</span> for embedded systems, web & AI</h1>
-        <p class="lead">Ich baue CLI Tools, experimentiere mit ML/AI-Pipelines und open-source Projekten.</p>
-        <div class="cta-row">
-          <button class="primary" onclick="location.href='#projects'">Projekte ansehen</button>
-          <button class="secondary" onclick="location.href='#contact'">Kontakt</button>
-          <button class="purple" onclick="location.href='https://suptower.github.io/beybladex-elo-system/'">BeybladeX Elo System</button>
-        </div>
-        <div class="stack">
-          <div class="chip">👨‍💻 <strong>Languages</strong> C · C++ · JavaScript · Python · TeX</div>
-        </div>
-      </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+            </ul>
+        </nav>
+    </div>
 
-      <div class="preview">
-        <div class="preview-card" id="tiltPreview">
-          <div class="preview-header">
-            <div class="preview-title">Live Preview</div>
-            <div class="preview-version">v1.0</div>
-          </div>
-          <div class="terminal">
-            $ git clone https://github.com/suptower/weather-cli
-            <br>Cloning into 'weather-cli'... done
-            <br>$ cd weather-cli && npm start
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Ausgewählte Projekte</h2>
-      <div class="grid">
-      <article class="card" onclick="window.open('https://github.com/suptower/beybladex-elo-system', '_blank')" style="cursor: pointer;">
-      <div class="project-title">BeybladeX Elo System</div>
-      <div class="project-desc">Elo-Ranking-System für BeybladeX-Spieler.</div>
-      <div class="stack">
-      <div class="chip">🧱 HTML</div>
-      <div class="chip">🎨 CSS</div>
-      <div class="chip">🐍 Python</div>
-      <div class="chip">📊 Stats</div>
-      </div>
-      </article>
-      <article class="card" onclick="window.open('https://github.com/suptower/weather-cli', '_blank')" style="cursor: pointer;">
-      <div class="project-title">Weather CLI</div>
-      <div class="project-desc">npm-Paket: Kommandozeilen-Tool zur Wettervorhersage.</div>
-      <div class="stack">
-      <div class="chip">⚙️ CLI</div>
-      <div class="chip">🌐 API</div>
-      <div class="chip">📦 NPM</div>
-      </div>
-      </article>
-
-      <article class="card" onclick="window.open('https://github.com/suptower/js-blackjack', '_blank')" style="cursor: pointer;">
-      <div class="project-title">Blackjack CLI</div>
-      <div class="project-desc">Kommandozeilen-Spiel zur Kartenspiel-Simulation.</div>
-      <div class="stack">
-      <div class="chip">🎮 CLI</div>
-      <div class="chip">🃏 Game</div>
-      <div class="chip">🎲 Logic</div>
-      </div>
-      </article>
-
-      <article class="card" onclick="window.open('https://github.com/suptower/soupify', '_blank')" style="cursor: pointer;">
-      <div class="project-title">Discord Bots</div>
-      <div class="project-desc">Applikationen zur Automatisierung und Moderation von Discord-Servern.</div>
-      <div class="stack">
-      <div class="chip">🛠️ Backend</div>
-      <div class="chip">🤖 Bots</div>
-      <div class="chip">🌐 API</div>
-      </div>
-      </article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="card contact-card">
-        <div>
-          <div class="contact-title">Kontakt</div>
-          <div class="contact-line">Discord: <a href="https://discord.com/users/211539634449154048">suptower</a></div>
-          <div class="contact-line">GitHub: <a href="https://github.com/suptower" target="_blank">github.com/suptower</a></div>
-        </div>
-        <div class="contact-text">Offen für Kooperationen & Open-Source Beiträge</div>
-      </div>
-    </section>
-
-    <footer>© 2025 suptower — Built with ❤️ · <a href="https://github.com/suptower" target="_blank">GitHub</a></footer>
-  </div>
-
-  <canvas id="bgCanvas"></canvas>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
