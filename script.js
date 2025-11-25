@@ -10,6 +10,11 @@ const canvas = document.getElementById('bgCanvas');
 const ctx = canvas.getContext('2d');
 let DPR = window.devicePixelRatio || 1;
 
+function getParticleColor(alpha) {
+  const isLight = document.documentElement.classList.contains('light');
+  return isLight ? `rgba(106,75,255,${alpha})` : `rgba(127,92,255,${alpha})`;
+}
+
 function resize() {
   canvas.width = innerWidth * DPR;
   canvas.height = innerHeight * DPR;
@@ -48,7 +53,7 @@ function tick() {
     if (p.y > innerHeight) p.y = 0;
 
     ctx.beginPath();
-    ctx.fillStyle = `rgba(127,92,255,${p.alpha})`;
+    ctx.fillStyle = getParticleColor(p.alpha);
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
     ctx.fill();
   });
