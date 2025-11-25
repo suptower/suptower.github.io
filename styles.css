@@ -9,7 +9,7 @@
   --glass-border: rgba(255,255,255,0.06);
   --glass-blur: 12px;
   --max-w:1200px;
-  --terminal-bg: #07080b;
+  --terminal-bg: linear-gradient(5deg, #7153e0, #00c09d);
   --gradient-1: rgba(127,92,255,0.08);
   --gradient-2: rgba(0,224,184,0.04);
   color-scheme: dark;
@@ -100,7 +100,7 @@ footer a{color:var(--accent)}
   --text-dark: #081020;
   --muted: rgba(2,6,23,0.6); --accent:#6a4bff; --accent-2:#00b58f;
   --glass-border: rgba(0,0,0,0.08);
-  --terminal-bg: #1e1e2e;
+  --terminal-bg: linear-gradient(5deg, #6a4bff, #00b58f);
   --gradient-1: rgba(127,92,255,0.12);
   --gradient-2: rgba(0,224,184,0.08);
   color-scheme:light;
